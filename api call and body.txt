@@ -1,0 +1,151 @@
+Users :  http://localhost:8082/user/save
+
+{
+	"name" : "",
+	"email" : "",
+	"password" : "",
+	"phoneNumber" : ""
+}
+
+
+Login : http://localhost:8082/user/login
+
+{
+    "email" : "yateesh.chandra@nucleusteq.com",
+    "password" : "03072001"
+}
+
+
+Category : http://localhost:8082/category
+
+{
+    "categoryName" : "Java1",
+    "description" : "This is Java 1"
+}
+
+
+Quiz : 
+http://localhost:8082/quiz
+http://localhost:8082/quiz/byCategory/6
+
+{
+    "quizName" : "Cat Quiz",
+    "quizDescription" : "QUIZ",
+    "numOfQuestions" : 0,
+    "timeInMin" : 2,
+    "categoryId" : 7
+}
+
+
+questions :
+GET : http://localhost:8082/question
+POST : http://localhost:8082/question/mcq
+POST : http://localhost:8082/question/assert
+PUT : http://localhost:8082/question/mcq/8
+PUT : http://localhost:8082/question/assert/8
+http://localhost:8082/question/byQuiz/7
+
+{
+    "questionTitle": "What is the size of 'boolean' datatype in java",
+        "option1": "1 bit",
+        "option2": "8 bits",
+        "option3": "4 bits",
+        "option4": "2 bits",
+        "correctOption": "4 bits",
+        "quizId" : 87
+}
+
+
+UserResponses : 
+http://localhost:8082/response/add
+
+{
+    "userId": 12,
+    "quizId": 87,
+    "categoryId": 2,
+    "numOfQuestions": 7,
+    "numOfQuestionsAnswered": 0,
+    "totalMarks" : 6,
+    "marksScored" : 5
+}
+
+AllResults: GET
+http://localhost:8082/results/12
+http://localhost:8082/results
+
+
+
+
+
+
+Questions : 
+
+What does HTML stand for?
+A) Hyper Transfer Markup Language
+B) Hyper Text Makeup Language
+C) Hyperlink and Text Markup Language
+D) Hyper Text Markup Language
+Correct Answer: D) Hyper Text Markup Language
+
+Which of the following is NOT a valid HTTP status code?
+A) 200 OK
+B) 404 Not Found
+C) 300 Multiple Choices
+D) 503 Server Error
+Correct Answer: C) 300 Multiple Choices
+
+What does CSS stand for in web development?
+A) Computer Style Sheet
+B) Creative Style Sheet
+C) Cascading Style Sheet
+D) Compressed Style Sheet
+Correct Answer: C) Cascading Style Sheet
+
+Which JavaScript method is used to add an element to the end of an array?
+A) push()
+B) unshift()
+C) append()
+D) add()
+Correct Answer: A) push()
+
+In web development, what does the acronym "DOM" stand for?
+A) Document Object Model
+B) Data Oriented Mapping
+C) Digital Object Module
+D) Document of Methods
+Correct Answer: A) Document Object Model
+
+Which of the following is not a valid way to declare a variable in JavaScript?
+A) var myVariable = 42;
+B) let myVariable = 42;
+C) const myVariable = 42;
+D) variable myVariable = 42;
+Correct Answer: D) variable myVariable = 42;
+
+Which protocol is commonly used for secure data transmission over the web?
+A) HTTP
+B) FTP
+C) HTTPS
+D) SMTP
+Correct Answer: C) HTTPS
+
+Which HTML tag is used to create a hyperlink?
+A) <link>
+B) <href>
+C) <a>
+D) <url>
+Correct Answer: C) <a>
+
+What is the purpose of the CSS property "display: none;"?
+A) It makes the element invisible, but it still takes up space on the page.
+B) It removes the element from the DOM.
+C) It makes the element partially transparent.
+D) It changes the font style of the element.
+Correct Answer: A) It makes the element invisible, but it still takes up space on the page.
+
+Which of the following is a valid way to comment out code in JavaScript?
+A) // This is a comment
+B) <!-- This is a comment -->
+C) /* This is a comment /
+D) This is a comment
+Correct Answer: C) / This is a comment */

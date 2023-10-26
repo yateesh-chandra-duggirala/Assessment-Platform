@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.AppCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  font-size: small;
+  height: 80%; 
+  margin: 0 auto;
+  margin-top: 15%;
+  background-color: rgb(242,242,242, 0.3);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.custom-swal-title {
+  font-size: 24px; 
+}
+
+.custom-swal-icon{
+  font-size: 24px;
+}
+
+.custom-swal-timer {
+  background-color:chartreuse; 
+}
+
+.custom-swal-button{
+  width: 100px;
+}
+
+.custom-swal-backdrop {
+  background-color: linear-gradient(90deg, rgba(156,255,251,1) 0%, rgba(238,255,167,1) 35%, rgba(150,255,158,1) 100%);
+}
+
+
+.animation {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.dot1,
+.dot3 {
+  opacity: 0;
+  animation: dotBlink 1s infinite;
+}
+
+.dot2 {
+  opacity: 0;
+  animation: dotBlink 0.5s infinite;
+}
+
+@keyframes dotBlink {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
